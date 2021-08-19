@@ -7,7 +7,7 @@ from PIL import Image
 # Poltly used instead of mathplotlib, they are basically the same, but plotly is aesthetically superior in my opinion and I use the same skills I applied on HW3
 
 # add your directory for skyscrapers.xlsx here
-FILE = 'C:\\Users\\emili\\PycharmProjects\\pythonProject\\FINALPROJECT\\skyscrapers.xlsx'
+FILE = 'skyscrapers.xlsx'
 
 # USEFUL DATA FRAMES, ONE GENERAL DF, THE OTHER TO COMPARE SIZES (ALL COUNTRIES)
 df = pd.read_excel(FILE, usecols=[0, 1, 3, 4, 5, 6])
@@ -142,7 +142,7 @@ option = st.sidebar.radio('CONTENTS', titleList)
 
 # CHAPTER 1 INTRODUCTION
 if option == titleList[0]:
-    st.image(openImage('C:\\Users\\emili\\PycharmProjects\\pythonProject\\FINALPROJECT\\skyscrapers.jpg'), caption='Source: Romain Trystram')
+    st.image(openImage('skyscrapers.jpg'), caption='Source: Romain Trystram')
     st.title("Skyscrapers and Economies")
     st.header("How data of skyscrapers show a history of economic performance")
     st.write("""
@@ -160,7 +160,7 @@ if option == titleList[0]:
 
 # CHAPTER 2 THE OPENING OF CHINA
 elif option == titleList[1]:
-    st.image(openImage('C:\\Users\\emili\\PycharmProjects\\pythonProject\\FINALPROJECT\\Flag-China.jpg'), caption='Source: Encyclopedia Britannica')
+    st.image(openImage('Flag-China.jpg'), caption='Source: Encyclopedia Britannica')
     st.title(titleList[1])
     st.write("""
     From **Graph A**, we can see that China surpasses the United States in the number of tallest skyscrapers worldwide at 38.3%, 
@@ -180,7 +180,7 @@ elif option == titleList[1]:
     chartSelect()
 
 elif option == titleList[2]:
-    st.image(openImage('C:\\Users\\emili\\PycharmProjects\\pythonProject\\FINALPROJECT\\russiamap.jpg'), caption='Source: Encyclopedia Britannica')
+    st.image(openImage('russiamap.jpg'), caption='Source: Encyclopedia Britannica')
     st.title(titleList[2])
     st.write("""
     The United States has 3 of the tallest structures that are industrial chimneys (**Graph A**) , making it the largest number of Chimneys held by an individual country. 
@@ -200,7 +200,7 @@ elif option == titleList[2]:
     chartSelect()
 
 elif option == titleList[3]:
-    st.image(openImage('C:\\Users\\emili\\PycharmProjects\\pythonProject\\FINALPROJECT\\skyscrapers.jpg'), caption='Source: Romain Trystram')
+    st.image(openImage('skyscrapers.jpg'), caption='Source: Romain Trystram')
     st.title(titleList[3])
     st.write("""
     In conclusion, this simple and vague dataset is capable of showing recent economic and political history of China and Russia and how they compare with the United States. 
